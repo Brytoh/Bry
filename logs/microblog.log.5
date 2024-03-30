@@ -1,0 +1,155 @@
+2024-03-02 17:06:48,356 ERROR: Exception on / [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 868, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1243, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+                   ^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 263, in get_locale
+    rv = babel.locale_selector()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\__init__.py", line 15, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'LANGUAGES'
+2024-03-02 17:08:59,297 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:47]
+2024-03-02 17:09:28,127 ERROR: Exception on / [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 868, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1243, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+                   ^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 259, in get_locale
+    babel = get_babel()
+            ^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 46, in get_babel
+    return app.extensions['babel']
+           ~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'babel'
+2024-03-02 17:16:33,929 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:47]
+2024-03-02 17:16:45,863 ERROR: Exception on / [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 868, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1243, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+                   ^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 259, in get_locale
+    babel = get_babel()
+            ^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 46, in get_babel
+    return app.extensions['babel']
+           ~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'babel'
+2024-03-02 17:20:42,336 ERROR: Exception on /index [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 868, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1243, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+                   ^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 259, in get_locale
+    babel = get_babel()
+            ^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 46, in get_babel
+    return app.extensions['babel']
+           ~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'babel'
+2024-03-02 17:20:43,384 ERROR: Exception on /index [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 868, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1243, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+                   ^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 259, in get_locale
+    babel = get_babel()
+            ^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 46, in get_babel
+    return app.extensions['babel']
+           ~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'babel'
+2024-03-02 17:20:48,257 ERROR: Exception on /index [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 868, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1243, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+                   ^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 259, in get_locale
+    babel = get_babel()
+            ^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_babel\__init__.py", line 46, in get_babel
+    return app.extensions['babel']
+           ~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'babel'
+2024-03-02 17:30:13,726 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:49]
+2024-03-02 17:40:23,508 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:50]
+2024-03-02 17:58:19,141 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:52]
+2024-03-02 18:01:07,930 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:52]
+2024-03-02 18:03:19,645 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:52]
+2024-03-02 18:05:47,690 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:52]
+2024-03-02 18:11:32,597 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:51]
+2024-03-02 18:19:23,256 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:55]
+2024-03-02 18:20:13,721 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:55]

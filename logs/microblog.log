@@ -1,0 +1,94 @@
+2024-03-03 18:08:47,907 ERROR: Exception on / [GET] [in C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\main\routes.py", line 47, in index
+    return render_template('index.html', title=_('Home'), form=form,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\nimlord\Desktop\microblogh\app\templates\index.html", line 2, in top-level template code
+    {% import "bootstrap_wtf.html" as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\templates\base.html", line 58, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\templates\index.html", line 10, in block 'content'
+    {% include '_post.html' %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\app\templates\_post.html", line 4, in top-level template code
+    <a href="{{ url_for('user', username=post.author.username) }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\flask\app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nimlord\Desktop\microblogh\venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'user' with values ['username']. Did you mean 'main.user' instead?
+2024-03-03 18:11:41,820 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 18:47:23,380 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 18:49:44,262 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 18:50:39,871 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 18:51:07,277 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 18:51:31,522 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:06:24,750 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:06:42,027 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:10:50,136 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:14:12,603 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:14:35,622 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:18:33,497 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:21:50,509 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-03 19:38:37,215 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-04 17:06:37,643 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:79]
+2024-03-04 17:14:30,735 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-04 17:36:16,778 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-04 17:57:25,453 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-04 18:03:14,056 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-04 20:04:03,931 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-05 08:46:59,202 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-05 08:48:47,664 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-05 11:11:59,006 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-05 11:36:44,842 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-06 09:24:42,667 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-10 08:39:24,484 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-10 08:47:52,399 INFO: Microblog startup [in C:\Users\nimlord\Desktop\microblogh\app\__init__.py:83]
+2024-03-11 20:31:50,103 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 20:41:07,662 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 20:41:30,819 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 20:42:18,511 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 21:41:43,376 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 21:53:03,750 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 21:53:13,127 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-11 22:05:49,030 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-12 10:45:20,333 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-12 11:28:18,251 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-12 11:41:27,818 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-25 09:24:11,283 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-29 15:06:02,571 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-29 15:24:45,818 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-29 15:25:52,259 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]
+2024-03-29 15:31:22,340 INFO: Microblog startup [in /home/devroy/Desktop/microblogh/app/__init__.py:83]

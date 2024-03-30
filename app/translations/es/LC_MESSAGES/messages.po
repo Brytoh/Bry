@@ -1,0 +1,302 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-03-03 19:14+0300\n"
+"PO-Revision-Date: 2017-09-29 23:25-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: app/__init__.py:22
+msgid "Please log in to access this page."
+msgstr ""
+
+#: app/main/routes.py:37 app/routes.py:39
+msgid "Your post is now live!"
+msgstr ""
+
+#: app/main/routes.py:47 app/routes.py:48
+msgid "Home"
+msgstr ""
+
+#: app/main/routes.py:64 app/routes.py:64
+msgid "Explore"
+msgstr ""
+
+#: app/auth/routes.py:23 app/routes.py:78
+msgid "Invalid username or password"
+msgstr ""
+
+#: app/auth/routes.py:30 app/routes.py:85
+msgid "Sign In"
+msgstr ""
+
+#: app/auth/routes.py:49 app/routes.py:104
+msgid "Congratulations, you are now a registered user!"
+msgstr ""
+
+#: app/auth/routes.py:51 app/routes.py:106
+msgid "Register"
+msgstr ""
+
+#: app/auth/routes.py:66 app/routes.py:120
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/auth/routes.py:69 app/routes.py:123
+msgid "Reset Password"
+msgstr ""
+
+#: app/auth/routes.py:83 app/routes.py:137
+msgid "Your password has been reset."
+msgstr ""
+
+#: app/main/routes.py:95 app/routes.py:168
+msgid "Your changes have been saved."
+msgstr ""
+
+#: app/main/routes.py:100 app/routes.py:173
+msgid "Edit Profile"
+msgstr ""
+
+#: app/main/routes.py:112 app/main/routes.py:133 app/routes.py:185
+#: app/routes.py:206
+#, python-format
+msgid "User %(username)s not found."
+msgstr ""
+
+#: app/main/routes.py:115 app/routes.py:188
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/main/routes.py:119 app/routes.py:192
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: app/main/routes.py:136 app/routes.py:209
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: app/main/routes.py:140 app/routes.py:213
+#, python-format
+msgid "You are not following %(username)s."
+msgstr ""
+
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr ""
+
+#: app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: app/main/forms.py:11
+msgid "Username"
+msgstr ""
+
+#: app/main/forms.py:12
+msgid "About me"
+msgstr ""
+
+#: app/main/forms.py:14 app/main/forms.py:35
+msgid "Submit"
+msgstr ""
+
+#: app/main/forms.py:25
+msgid "Please use a different username."
+msgstr ""
+
+#: app/main/forms.py:33
+msgid "Say something"
+msgstr ""
+
+#~ msgid "Please log in to access this page."
+#~ msgstr "Por favor ingrese para acceder a esta página."
+
+#~ msgid "Error: the translation service is not configured."
+#~ msgstr "Error: el servicio de traducciones no está configurado."
+
+#~ msgid "Error: the translation service failed."
+#~ msgstr "Error el servicio de traducciones ha fallado."
+
+#~ msgid "[Microblog] Reset Your Password"
+#~ msgstr "[Microblog] Nueva Contraseña"
+
+#~ msgid "Username"
+#~ msgstr "Nombre de usuario"
+
+#~ msgid "Password"
+#~ msgstr "Contraseña"
+
+#~ msgid "Remember Me"
+#~ msgstr "Recordarme"
+
+#~ msgid "Sign In"
+#~ msgstr "Ingresar"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Repetir Contraseña"
+
+#~ msgid "Register"
+#~ msgstr "Registrarse"
+
+#~ msgid "Please use a different username."
+#~ msgstr "Por favor use un nombre de usuario diferente."
+
+#~ msgid "Please use a different email address."
+#~ msgstr "Por favor use una dirección de email diferente."
+
+#~ msgid "Request Password Reset"
+#~ msgstr "Pedir una nueva contraseña"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "Nombre de usuario o contraseña inválidos"
+
+#~ msgid "Congratulations, you are now a registered user!"
+#~ msgstr "¡Felicitaciones, ya eres un usuario registrado!"
+
+#~ msgid "Check your email for the instructions to reset your password"
+#~ msgstr "Busca en tu email las instrucciones para crear una nueva contraseña"
+
+#~ msgid "Your password has been reset."
+#~ msgstr "Tu contraseña ha sido cambiada."
+
+#~ msgid "About me"
+#~ msgstr "Acerca de mí"
+
+#~ msgid "Submit"
+#~ msgstr "Enviar"
+
+#~ msgid "Say something"
+#~ msgstr "Dí algo"
+
+#~ msgid "Your post is now live!"
+#~ msgstr "¡Tu artículo ha sido publicado!"
+
+#~ msgid "Your changes have been saved."
+#~ msgstr "Tus cambios han sido salvados."
+
+#~ msgid "Edit Profile"
+#~ msgstr "Editar Perfil"
+
+#~ msgid "User %(username)s not found."
+#~ msgstr "El usuario %(username)s no ha sido encontrado."
+
+#~ msgid "You cannot follow yourself!"
+#~ msgstr "¡No te puedes seguir a tí mismo!"
+
+#~ msgid "You are following %(username)s!"
+#~ msgstr "¡Ahora estás siguiendo a %(username)s!"
+
+#~ msgid "You cannot unfollow yourself!"
+#~ msgstr "¡No te puedes dejar de seguir a tí mismo!"
+
+#~ msgid "You are not following %(username)s."
+#~ msgstr "No estás siguiendo a %(username)s."
+
+#~ msgid "%(username)s said %(when)s"
+#~ msgstr "%(username)s dijo %(when)s"
+
+#~ msgid "Translate"
+#~ msgstr "Traducir"
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr "Bienvenido a Microblog"
+
+#~ msgid "Home"
+#~ msgstr "Inicio"
+
+#~ msgid "Explore"
+#~ msgstr "Explorar"
+
+#~ msgid "Login"
+#~ msgstr "Ingresar"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Logout"
+#~ msgstr "Salir"
+
+#~ msgid "Error: Could not contact server."
+#~ msgstr "Error: el servidor no pudo ser contactado."
+
+#~ msgid "Hi, %(username)s!"
+#~ msgstr "¡Hola, %(username)s!"
+
+#~ msgid "Newer posts"
+#~ msgstr "Artículos siguientes"
+
+#~ msgid "Older posts"
+#~ msgstr "Artículos previos"
+
+#~ msgid "User"
+#~ msgstr "Usuario"
+
+#~ msgid "Last seen on"
+#~ msgstr "Última visita"
+
+#~ msgid "%(count)d followers"
+#~ msgstr "%(count)d seguidores"
+
+#~ msgid "%(count)d following"
+#~ msgstr "siguiendo a %(count)d"
+
+#~ msgid "Edit your profile"
+#~ msgstr "Editar tu perfil"
+
+#~ msgid "Follow"
+#~ msgstr "Seguir"
+
+#~ msgid "Unfollow"
+#~ msgstr "Dejar de seguir"
+
+#~ msgid "New User?"
+#~ msgstr "¿Usuario Nuevo?"
+
+#~ msgid "Click to Register!"
+#~ msgstr "¡Haz click aquí para registrarte!"
+
+#~ msgid "Forgot Your Password?"
+#~ msgstr "¿Te olvidaste tu contraseña?"
+
+#~ msgid "Click to Reset It"
+#~ msgstr "Haz click aquí para pedir una nueva"
+
+#~ msgid "Reset Your Password"
+#~ msgstr "Nueva Contraseña"
+
+#~ msgid "Reset Password"
+#~ msgstr "Nueva Contraseña"
+
+#~ msgid "Not Found"
+#~ msgstr "Página No Encontrada"
+
+#~ msgid "Back"
+#~ msgstr "Atrás"
+
+#~ msgid "An unexpected error has occurred"
+#~ msgstr "Ha ocurrido un error inesperado"
+
+#~ msgid "The administrator has been notified. Sorry for the inconvenience!"
+#~ msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
+
